@@ -1,0 +1,55 @@
+function imprimirOlaMundo() {
+    console.log("Olá mundo")
+
+}
+
+function Nome(nome) {
+  console.log("Olá", nome) 
+} 
+
+//let lernome = prompt("Qual o seu nome");
+//Nome(lernome);
+
+//const a = 1
+
+function imprimeVariavel() {
+    const b = 2
+    console.log("Variavel a", a)
+    console.log("Variavel b", b)
+}
+
+//imprimeVariavel()
+
+//console.log("Variavel a", a)
+//console.log("Variavel b", b)
+
+
+function calculaArea(altura, largura) {
+    const area = altura * largura
+    return area
+}
+
+const areaCalculada = calculaArea(2, 3)
+
+//console.log(calculaArea(2, 3))
+
+function numero(primeiro, segundo) {
+    const soma = primeiro + segundo 
+    return soma
+}
+
+
+//console.log(numero(4, 5))
+
+
+
+
+function retornaPrimeiroEUltimo(meuarray = []) {
+     let novoArray = [];
+     novoArray[0] = (meuarray[meuarray.length - 1]) / 2;
+     novoArray[1] = (meuarray[0]) / 2;
+     return novoArray;
+    
+}
+let antigoArray = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+console.log(retornaPrimeiroEUltimo(antigoArray))
